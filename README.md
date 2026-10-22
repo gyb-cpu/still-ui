@@ -98,6 +98,8 @@ Components read semantic tokens and never raw colors. Change the palette in `fou
 
 Every item has a page under [`docs/`](./docs) with its install command, files, exports, and a usage snippet. `llms.txt` is the flat index for coding agents.
 
+Blocks ship upstream demo copy: replace the "Arc" brand name, sample emails, links, and remote sample images before shipping.
+
 ## For AI coding agents
 
 - [`SKILL.md`](./SKILL.md): how to choose, install, compose, and verify Still components.
