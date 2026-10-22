@@ -16,7 +16,7 @@ npx shadcn@latest add @still/login-centered
 ```
 
 ```tsx
-import { LoginCentered } from "registry/blocks/login-centered/login-centered";
+import { LoginCentered } from "@/components/still/blocks/login-centered/login-centered";
 
 export function Example() {
   return <LoginCentered />;

@@ -16,7 +16,7 @@ npx shadcn@latest add @still/site-header
 ```
 
 ```tsx
-import { ArcMark } from "registry/blocks/site-header/site-header";
+import { ArcMark } from "@/components/still/blocks/site-header/site-header";
 
 export function Example() {
   return <ArcMark />;

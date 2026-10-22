@@ -16,7 +16,7 @@ npx shadcn@latest add @still/plan-comparison
 ```
 
 ```tsx
-import { PlanComparison } from "registry/blocks/plan-comparison/plan-comparison";
+import { PlanComparison } from "@/components/still/blocks/plan-comparison/plan-comparison";
 
 export function Example() {
   return <PlanComparison />;

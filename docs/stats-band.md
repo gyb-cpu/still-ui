@@ -16,7 +16,7 @@ npx shadcn@latest add @still/stats-band
 ```
 
 ```tsx
-import { StatsBand } from "registry/blocks/stats-band/stats-band";
+import { StatsBand } from "@/components/still/blocks/stats-band/stats-band";
 
 export function Example() {
   return <StatsBand />;

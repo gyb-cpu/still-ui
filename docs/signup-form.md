@@ -16,7 +16,7 @@ npx shadcn@latest add @still/signup-form
 ```
 
 ```tsx
-import { SignupForm } from "registry/blocks/signup-form/signup-form";
+import { SignupForm } from "@/components/still/blocks/signup-form/signup-form";
 
 export function Example() {
   return <SignupForm />;

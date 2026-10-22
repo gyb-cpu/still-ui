@@ -16,7 +16,7 @@ npx shadcn@latest add @still/faq-section
 ```
 
 ```tsx
-import { faqExampleItems } from "registry/blocks/faq-section/faq-section";
+import { faqExampleItems } from "@/components/still/blocks/faq-section/faq-section";
 
 export function Example() {
   return <faqExampleItems />;

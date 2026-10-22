@@ -16,7 +16,7 @@ npx shadcn@latest add @still/logo-marquee
 ```
 
 ```tsx
-import { LogoMarquee } from "registry/blocks/logo-marquee/logo-marquee";
+import { LogoMarquee } from "@/components/still/blocks/logo-marquee/logo-marquee";
 
 export function Example() {
   return <LogoMarquee />;

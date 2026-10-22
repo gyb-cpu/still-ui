@@ -16,7 +16,7 @@ npx shadcn@latest add @still/hero-section
 ```
 
 ```tsx
-import { HeroSection } from "registry/blocks/hero-section/hero-section";
+import { HeroSection } from "@/components/still/blocks/hero-section/hero-section";
 
 export function Example() {
   return <HeroSection />;

@@ -16,7 +16,7 @@ npx shadcn@latest add @still/changelog-feed
 ```
 
 ```tsx
-import { ChangelogFeed } from "registry/blocks/changelog-feed/changelog-feed";
+import { ChangelogFeed } from "@/components/still/blocks/changelog-feed/changelog-feed";
 
 export function Example() {
   return <ChangelogFeed />;

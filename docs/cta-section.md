@@ -16,7 +16,7 @@ npx shadcn@latest add @still/cta-section
 ```
 
 ```tsx
-import { CtaSection } from "registry/blocks/cta-section/cta-section";
+import { CtaSection } from "@/components/still/blocks/cta-section/cta-section";
 
 export function Example() {
   return <CtaSection />;

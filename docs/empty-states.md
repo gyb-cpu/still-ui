@@ -16,7 +16,7 @@ npx shadcn@latest add @still/empty-states
 ```
 
 ```tsx
-import { EmptyStates } from "registry/blocks/empty-states/empty-states";
+import { EmptyStates } from "@/components/still/blocks/empty-states/empty-states";
 
 export function Example() {
   return <EmptyStates />;

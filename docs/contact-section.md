@@ -16,7 +16,7 @@ npx shadcn@latest add @still/contact-section
 ```
 
 ```tsx
-import { contactExampleChannels } from "registry/blocks/contact-section/contact-section";
+import { contactExampleChannels } from "@/components/still/blocks/contact-section/contact-section";
 
 export function Example() {
   return <contactExampleChannels />;

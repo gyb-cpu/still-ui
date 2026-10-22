@@ -16,7 +16,7 @@ npx shadcn@latest add @still/site-footer
 ```
 
 ```tsx
-import { siteFooterExampleColumns } from "registry/blocks/site-footer/site-footer";
+import { siteFooterExampleColumns } from "@/components/still/blocks/site-footer/site-footer";
 
 export function Example() {
   return <siteFooterExampleColumns />;

@@ -16,7 +16,7 @@ npx shadcn@latest add @still/comparison-table
 ```
 
 ```tsx
-import { ComparisonTable } from "registry/blocks/comparison-table/comparison-table";
+import { ComparisonTable } from "@/components/still/blocks/comparison-table/comparison-table";
 
 export function Example() {
   return <ComparisonTable />;

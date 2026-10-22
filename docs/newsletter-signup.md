@@ -16,7 +16,7 @@ npx shadcn@latest add @still/newsletter-signup
 ```
 
 ```tsx
-import { NewsletterSignup } from "registry/blocks/newsletter-signup/newsletter-signup";
+import { NewsletterSignup } from "@/components/still/blocks/newsletter-signup/newsletter-signup";
 
 export function Example() {
   return <NewsletterSignup />;

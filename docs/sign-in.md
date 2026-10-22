@@ -16,7 +16,7 @@ npx shadcn@latest add @still/sign-in
 ```
 
 ```tsx
-import { SignIn } from "registry/blocks/sign-in/sign-in";
+import { SignIn } from "@/components/still/blocks/sign-in/sign-in";
 
 export function Example() {
   return <SignIn />;

@@ -94,7 +94,12 @@ const llms = [
 for (const item of registry.items.filter(entry => !entry.name.startsWith("still-"))) {
   const dir = itemDir(item);
   const { main, exports } = await readMain(item);
-  const importPath = main ? main.replace(/^registry\/components\//, "@/components/still/").replace(/\.tsx$/, "") : null;
+  const mainEntry = main ? item.files.find(file => file.path === main) : null;
+  const importPath = mainEntry?.target
+    ? mainEntry.target.replace("@components/", "@/components/").replace(/\.tsx$/, "")
+    : main
+      ? main.replace(/^registry\//, "@/components/still/").replace(/\.tsx$/, "")
+      : null;
   const primary = exports.find(name => name !== "useToday") ?? "Component";
   const link = `https://uiarc.dev/components/${dir}`;
   const sample = importPath

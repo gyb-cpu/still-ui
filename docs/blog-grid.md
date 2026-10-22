@@ -16,7 +16,7 @@ npx shadcn@latest add @still/blog-grid
 ```
 
 ```tsx
-import { BlogGrid } from "registry/blocks/blog-grid/blog-grid";
+import { BlogGrid } from "@/components/still/blocks/blog-grid/blog-grid";
 
 export function Example() {
   return <BlogGrid />;

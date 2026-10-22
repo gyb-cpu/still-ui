@@ -16,7 +16,7 @@ npx shadcn@latest add @still/page-header
 ```
 
 ```tsx
-import { PageHeader } from "registry/blocks/page-header/page-header";
+import { PageHeader } from "@/components/still/blocks/page-header/page-header";
 
 export function Example() {
   return <PageHeader />;
