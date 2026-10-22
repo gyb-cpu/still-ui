@@ -1,0 +1,76 @@
+# Still UI
+
+> Personal React components with calm motion, forked from Arc Library (MIT). Source you own: CSS modules on semantic design tokens, Motion for animation, keyboard support and a reduced-motion path in every item.
+
+There are 34 installable items. Install with the shadcn CLI from this repository's raw registry, or copy the files by hand. Components are React 19 + TypeScript, Next.js (App Router) or Vite, no Tailwind required.
+
+## Install
+
+Register the registry once in `components.json`:
+
+```json
+{ "registries": { "@still": "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/{name}.json" } }
+```
+
+Then:
+
+```bash
+npx shadcn@latest add @still/still-foundation   # design tokens, once per app
+npx shadcn@latest add @still/button @still/dialog
+```
+
+Or install from a full URL, without editing components.json:
+
+```bash
+npx shadcn@latest add https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/button.json
+```
+
+Import the tokens once at the app root: `import "@/components/still/foundation.css";`
+
+## Rules for agents
+
+- Prefer an existing Still component over writing a new one; read its page in `docs/` before using it and use only documented props.
+- Keep semantic HTML, keyboard behavior, and a reduced-motion branch (`prefers-reduced-motion`) for every animation.
+- Use the semantic tokens (`--background`, `--surface`, `--foreground`, `--text-secondary`, `--border`, `--accent`, `--success`, `--warning`, `--danger`) instead of raw colors; check light and dark.
+- Use `motionTokens` presets from `@/lib/motion-tokens` (`snappy` for presses, `smooth` for panels, `morph` for shared highlights). Motion explains cause and effect.
+- Follow the visual language: cool neutrals, indigo accent, restrained motion. Do not add decorative gradients, glows, or a second icon set.
+
+## Components
+
+- [Accordion](https://github.com/gyb-cpu/still-ui/blob/main/docs/accordion.md): Progressively reveal supporting information in place.
+- [Alert](https://github.com/gyb-cpu/still-ui/blob/main/docs/alert.md): A persistent message that helps people recover or continue.
+- [Avatar](https://github.com/gyb-cpu/still-ui/blob/main/docs/avatar.md): A compact identity marker for people and accounts.
+- [Badge](https://github.com/gyb-cpu/still-ui/blob/main/docs/badge.md): A small label for status, category, or metadata.
+- [Button](https://github.com/gyb-cpu/still-ui/blob/main/docs/button.md): A clear, responsive action with quiet secondary states.
+- [Calendar](https://github.com/gyb-cpu/still-ui/blob/main/docs/calendar.md): Browse dates in a clear, compact month view.
+- [Card](https://github.com/gyb-cpu/still-ui/blob/main/docs/card.md): A contained group of related content and actions.
+- [Checkbox](https://github.com/gyb-cpu/still-ui/blob/main/docs/checkbox.md): A binary choice with a precise, legible state.
+- [Combobox](https://github.com/gyb-cpu/still-ui/blob/main/docs/combobox.md): Search and select from a list without leaving the field.
+- [Command palette](https://github.com/gyb-cpu/still-ui/blob/main/docs/command-palette.md): A complete keyboard driven action surface with search, grouped results, and shortcuts.
+- [Context menu](https://github.com/gyb-cpu/still-ui/blob/main/docs/context-menu.md): Secondary actions kept close to the selected object.
+- [Date picker](https://github.com/gyb-cpu/still-ui/blob/main/docs/date-picker.md): Choose a date without losing context.
+- [Dialog](https://github.com/gyb-cpu/still-ui/blob/main/docs/dialog.md): A focused surface for decisions that need attention.
+- [Drawer](https://github.com/gyb-cpu/still-ui/blob/main/docs/drawer.md): A temporary side surface for focused work.
+- [Dropdown menu](https://github.com/gyb-cpu/still-ui/blob/main/docs/dropdown-menu.md): A focused list of actions anchored to a trigger.
+- [Empty state](https://github.com/gyb-cpu/still-ui/blob/main/docs/empty-state.md): A useful next step when there is nothing to show yet.
+- [Input](https://github.com/gyb-cpu/still-ui/blob/main/docs/input.md): A single line field with clear labels and useful states.
+- [Number field](https://github.com/gyb-cpu/still-ui/blob/main/docs/number-field.md): Enter a bounded number with clear increment controls.
+- [Pagination](https://github.com/gyb-cpu/still-ui/blob/main/docs/pagination.md): Move through a long collection with clear bounds.
+- [Popover](https://github.com/gyb-cpu/still-ui/blob/main/docs/popover.md): A small anchored surface for contextual information.
+- [Progress](https://github.com/gyb-cpu/still-ui/blob/main/docs/progress.md): Show how much of a known task is complete.
+- [Radio group](https://github.com/gyb-cpu/still-ui/blob/main/docs/radio-group.md): Choose one option from a visible set.
+- [Select](https://github.com/gyb-cpu/still-ui/blob/main/docs/select.md): A compact choice field with a keyboard friendly menu.
+- [Skeleton](https://github.com/gyb-cpu/still-ui/blob/main/docs/skeleton.md): Reserve space while content is still loading.
+- [Slider](https://github.com/gyb-cpu/still-ui/blob/main/docs/slider.md): Pick a value or a range on a track that follows your finger.
+- [Sortable data table](https://github.com/gyb-cpu/still-ui/blob/main/docs/sortable-data-table.md): Compare structured records with sortable columns.
+- [Stepper](https://github.com/gyb-cpu/still-ui/blob/main/docs/stepper.md): Show where a person is in a multi-step flow and what is done.
+- [Switch](https://github.com/gyb-cpu/still-ui/blob/main/docs/switch.md): A tactile toggle for settings that take effect immediately.
+- [Tabs](https://github.com/gyb-cpu/still-ui/blob/main/docs/tabs.md): Switch between related content in the same context.
+- [Textarea](https://github.com/gyb-cpu/still-ui/blob/main/docs/textarea.md): A multiline field for notes, descriptions, and longer text.
+- [Toast](https://github.com/gyb-cpu/still-ui/blob/main/docs/toast.md): Brief confirmation for a completed background action.
+- [Tooltip](https://github.com/gyb-cpu/still-ui/blob/main/docs/tooltip.md): Short supporting text for unfamiliar controls.
+
+## Docs
+
+Every item has a page under `docs/`. Read it before using the component.
+

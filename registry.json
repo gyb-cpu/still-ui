@@ -1,0 +1,1220 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "still",
+  "homepage": "https://github.com/gyb-cpu/still-ui",
+  "items": [
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "description": "Progressively reveal supporting information in place.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-accordion",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/accordion/accordion.tsx",
+          "type": "registry:component",
+          "target": "@components/still/accordion/accordion.tsx"
+        },
+        {
+          "path": "registry/components/accordion/accordion.module.css",
+          "type": "registry:component",
+          "target": "@components/still/accordion/accordion.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "disclosure",
+          "layout"
+        ]
+      }
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "A persistent message that helps people recover or continue.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/alert/alert.tsx",
+          "type": "registry:component",
+          "target": "@components/still/alert/alert.tsx"
+        },
+        {
+          "path": "registry/components/alert/alert.module.css",
+          "type": "registry:component",
+          "target": "@components/still/alert/alert.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "status",
+          "message"
+        ]
+      }
+    },
+    {
+      "name": "still-foundation",
+      "type": "registry:item",
+      "title": "Arc foundation",
+      "description": "Arc design tokens (color, surface, radius, shadow, accent, focus, light and dark themes), plus the shared motion presets. Install once per app.",
+      "categories": [
+        "foundation"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/foundation.css",
+          "type": "registry:component",
+          "target": "@components/still/foundation.css"
+        }
+      ]
+    },
+    {
+      "name": "still-motion-tokens",
+      "type": "registry:item",
+      "title": "Arc motion tokens",
+      "description": "The shared motion presets (durations, easings, springs, staggers) Arc components import. Installed automatically with any item that uses them.",
+      "categories": [
+        "foundation"
+      ],
+      "dependencies": [],
+      "files": [
+        {
+          "path": "registry/motion-tokens.ts",
+          "type": "registry:component",
+          "target": "@components/still/motion-tokens.ts"
+        },
+        {
+          "path": "lib/motion-tokens.ts",
+          "type": "registry:lib",
+          "target": "@components/still/lib/motion-tokens.ts"
+        }
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "A compact identity marker for people and accounts.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/avatar/avatar.tsx",
+          "type": "registry:component",
+          "target": "@components/still/avatar/avatar.tsx"
+        },
+        {
+          "path": "registry/components/avatar/avatar.module.css",
+          "type": "registry:component",
+          "target": "@components/still/avatar/avatar.module.css"
+        },
+        {
+          "path": "lib/still-provider.tsx",
+          "type": "registry:lib",
+          "target": "@components/still/lib/still-provider.tsx"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "identity",
+          "people"
+        ]
+      }
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "A small label for status, category, or metadata.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/badge/badge.tsx",
+          "type": "registry:component",
+          "target": "@components/still/badge/badge.tsx"
+        },
+        {
+          "path": "registry/components/badge/badge.module.css",
+          "type": "registry:component",
+          "target": "@components/still/badge/badge.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "label",
+          "status"
+        ]
+      }
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "A clear, responsive action with quiet secondary states.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/button/button.tsx",
+          "type": "registry:component",
+          "target": "@components/still/button/button.tsx"
+        },
+        {
+          "path": "registry/components/button/button.module.css",
+          "type": "registry:component",
+          "target": "@components/still/button/button.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "action",
+          "control"
+        ]
+      }
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "title": "Calendar",
+      "description": "Browse dates in a clear, compact month view.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/calendar/calendar.tsx",
+          "type": "registry:component",
+          "target": "@components/still/calendar/calendar.tsx"
+        },
+        {
+          "path": "lib/use-today.ts",
+          "type": "registry:lib",
+          "target": "@components/still/lib/use-today.ts"
+        },
+        {
+          "path": "registry/components/calendar/calendar.module.css",
+          "type": "registry:component",
+          "target": "@components/still/calendar/calendar.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "date",
+          "field"
+        ]
+      }
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "A contained group of related content and actions.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/card/card.tsx",
+          "type": "registry:component",
+          "target": "@components/still/card/card.tsx"
+        },
+        {
+          "path": "registry/components/card/card.module.css",
+          "type": "registry:component",
+          "target": "@components/still/card/card.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "surface",
+          "layout"
+        ]
+      }
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "A binary choice with a precise, legible state.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "@radix-ui/react-checkbox",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/checkbox/checkbox.tsx",
+          "type": "registry:component",
+          "target": "@components/still/checkbox/checkbox.tsx"
+        },
+        {
+          "path": "registry/components/checkbox/checkbox.module.css",
+          "type": "registry:component",
+          "target": "@components/still/checkbox/checkbox.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "field",
+          "form"
+        ]
+      }
+    },
+    {
+      "name": "combobox",
+      "type": "registry:ui",
+      "title": "Combobox",
+      "description": "Search and select from a list without leaving the field.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/combobox/combobox.tsx",
+          "type": "registry:component",
+          "target": "@components/still/combobox/combobox.tsx"
+        },
+        {
+          "path": "registry/components/combobox/combobox.module.css",
+          "type": "registry:component",
+          "target": "@components/still/combobox/combobox.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "field",
+          "search"
+        ]
+      }
+    },
+    {
+      "name": "command-palette",
+      "type": "registry:block",
+      "title": "Command palette",
+      "description": "A complete keyboard driven action surface with search, grouped results, and shortcuts.",
+      "categories": [
+        "blocks"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/command-palette/command-palette.tsx",
+          "type": "registry:component",
+          "target": "@components/still/command-palette/command-palette.tsx"
+        },
+        {
+          "path": "registry/components/command-palette/command-palette.module.css",
+          "type": "registry:component",
+          "target": "@components/still/command-palette/command-palette.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "block"
+      }
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "Context menu",
+      "description": "Secondary actions kept close to the selected object.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/context-menu/context-menu.tsx",
+          "type": "registry:component",
+          "target": "@components/still/context-menu/context-menu.tsx"
+        },
+        {
+          "path": "registry/components/context-menu/context-menu.module.css",
+          "type": "registry:component",
+          "target": "@components/still/context-menu/context-menu.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "menu",
+          "action"
+        ]
+      }
+    },
+    {
+      "name": "date-picker",
+      "type": "registry:ui",
+      "title": "Date picker",
+      "description": "Choose a date without losing context.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json",
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/calendar.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/date-picker/date-picker.tsx",
+          "type": "registry:component",
+          "target": "@components/still/date-picker/date-picker.tsx"
+        },
+        {
+          "path": "registry/components/date-picker/date-picker.module.css",
+          "type": "registry:component",
+          "target": "@components/still/date-picker/date-picker.module.css"
+        },
+        {
+          "path": "registry/components/calendar/calendar.tsx",
+          "type": "registry:component",
+          "target": "@components/still/calendar/calendar.tsx"
+        },
+        {
+          "path": "lib/use-today.ts",
+          "type": "registry:lib",
+          "target": "@components/still/lib/use-today.ts"
+        },
+        {
+          "path": "registry/components/calendar/calendar.module.css",
+          "type": "registry:component",
+          "target": "@components/still/calendar/calendar.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "date",
+          "field"
+        ]
+      }
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "A focused surface for decisions that need attention.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/dialog/dialog.tsx",
+          "type": "registry:component",
+          "target": "@components/still/dialog/dialog.tsx"
+        },
+        {
+          "path": "registry/components/dialog/dialog.module.css",
+          "type": "registry:component",
+          "target": "@components/still/dialog/dialog.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "modal",
+          "overlay"
+        ]
+      }
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "title": "Drawer",
+      "description": "A temporary side surface for focused work.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/drawer/drawer.tsx",
+          "type": "registry:component",
+          "target": "@components/still/drawer/drawer.tsx"
+        },
+        {
+          "path": "registry/components/drawer/drawer.module.css",
+          "type": "registry:component",
+          "target": "@components/still/drawer/drawer.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "overlay",
+          "surface"
+        ]
+      }
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown menu",
+      "description": "A focused list of actions anchored to a trigger.",
+      "categories": [
+        "actions"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/dropdown-menu/dropdown-menu.tsx",
+          "type": "registry:component",
+          "target": "@components/still/dropdown-menu/dropdown-menu.tsx"
+        },
+        {
+          "path": "registry/components/dropdown-menu/dropdown-menu.module.css",
+          "type": "registry:component",
+          "target": "@components/still/dropdown-menu/dropdown-menu.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "menu",
+          "action"
+        ]
+      }
+    },
+    {
+      "name": "empty-state",
+      "type": "registry:ui",
+      "title": "Empty state",
+      "description": "A useful next step when there is nothing to show yet.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/empty-state/empty-state.tsx",
+          "type": "registry:component",
+          "target": "@components/still/empty-state/empty-state.tsx"
+        },
+        {
+          "path": "registry/components/empty-state/empty-state.module.css",
+          "type": "registry:component",
+          "target": "@components/still/empty-state/empty-state.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "data",
+          "guidance"
+        ]
+      }
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "A single line field with clear labels and useful states.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/input/input.tsx",
+          "type": "registry:component",
+          "target": "@components/still/input/input.tsx"
+        },
+        {
+          "path": "registry/components/input/input.module.css",
+          "type": "registry:component",
+          "target": "@components/still/input/input.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "field",
+          "form"
+        ]
+      }
+    },
+    {
+      "name": "number-field",
+      "type": "registry:ui",
+      "title": "Number field",
+      "description": "Enter a bounded number with clear increment controls.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/number-field/number-field.tsx",
+          "type": "registry:component",
+          "target": "@components/still/number-field/number-field.tsx"
+        },
+        {
+          "path": "registry/components/number-field/number-field.module.css",
+          "type": "registry:component",
+          "target": "@components/still/number-field/number-field.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "field",
+          "numeric"
+        ]
+      }
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "description": "Move through a long collection with clear bounds.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/pagination/pagination.tsx",
+          "type": "registry:component",
+          "target": "@components/still/pagination/pagination.tsx"
+        },
+        {
+          "path": "registry/components/pagination/pagination.module.css",
+          "type": "registry:component",
+          "target": "@components/still/pagination/pagination.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "data",
+          "navigation"
+        ]
+      }
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "A small anchored surface for contextual information.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-popover"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/components/popover/popover.tsx",
+          "type": "registry:component",
+          "target": "@components/still/popover/popover.tsx"
+        },
+        {
+          "path": "registry/components/popover/popover.module.css",
+          "type": "registry:component",
+          "target": "@components/still/popover/popover.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "overlay",
+          "menu"
+        ]
+      }
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "description": "Show how much of a known task is complete.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/progress/progress.tsx",
+          "type": "registry:component",
+          "target": "@components/still/progress/progress.tsx"
+        },
+        {
+          "path": "registry/components/progress/progress.module.css",
+          "type": "registry:component",
+          "target": "@components/still/progress/progress.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "status",
+          "loading"
+        ]
+      }
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio group",
+      "description": "Choose one option from a visible set.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/radio-group/radio-group.tsx",
+          "type": "registry:component",
+          "target": "@components/still/radio-group/radio-group.tsx"
+        },
+        {
+          "path": "registry/components/radio-group/radio-group.module.css",
+          "type": "registry:component",
+          "target": "@components/still/radio-group/radio-group.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "field",
+          "choice"
+        ]
+      }
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "A compact choice field with a keyboard friendly menu.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "@radix-ui/react-select",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/select/select.tsx",
+          "type": "registry:component",
+          "target": "@components/still/select/select.tsx"
+        },
+        {
+          "path": "registry/components/select/select.module.css",
+          "type": "registry:component",
+          "target": "@components/still/select/select.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "field",
+          "form"
+        ]
+      }
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "Reserve space while content is still loading.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/skeleton/skeleton.tsx",
+          "type": "registry:component",
+          "target": "@components/still/skeleton/skeleton.tsx"
+        },
+        {
+          "path": "registry/components/skeleton/skeleton.module.css",
+          "type": "registry:component",
+          "target": "@components/still/skeleton/skeleton.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "loading",
+          "status"
+        ]
+      }
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "title": "Slider",
+      "description": "Pick a value or a range on a track that follows your finger.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/slider/slider.tsx",
+          "type": "registry:component",
+          "target": "@components/still/slider/slider.tsx"
+        },
+        {
+          "path": "registry/components/slider/slider.module.css",
+          "type": "registry:component",
+          "target": "@components/still/slider/slider.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "slider",
+          "range",
+          "input"
+        ]
+      }
+    },
+    {
+      "name": "sortable-data-table",
+      "type": "registry:ui",
+      "title": "Sortable data table",
+      "description": "Compare structured records with sortable columns.",
+      "categories": [
+        "data"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/sortable-data-table/sortable-data-table.tsx",
+          "type": "registry:component",
+          "target": "@components/still/sortable-data-table/sortable-data-table.tsx"
+        },
+        {
+          "path": "registry/components/sortable-data-table/sortable-data-table.module.css",
+          "type": "registry:component",
+          "target": "@components/still/sortable-data-table/sortable-data-table.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "data",
+          "table"
+        ]
+      }
+    },
+    {
+      "name": "stepper",
+      "type": "registry:ui",
+      "title": "Stepper",
+      "description": "Show where a person is in a multi-step flow and what is done.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/stepper/stepper.tsx",
+          "type": "registry:component",
+          "target": "@components/still/stepper/stepper.tsx"
+        },
+        {
+          "path": "registry/components/stepper/stepper.module.css",
+          "type": "registry:component",
+          "target": "@components/still/stepper/stepper.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "motion",
+          "product"
+        ]
+      }
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "A tactile toggle for settings that take effect immediately.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "@radix-ui/react-switch",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/switch/switch.tsx",
+          "type": "registry:component",
+          "target": "@components/still/switch/switch.tsx"
+        },
+        {
+          "path": "registry/components/switch/switch.module.css",
+          "type": "registry:component",
+          "target": "@components/still/switch/switch.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "toggle",
+          "settings"
+        ]
+      }
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "Switch between related content in the same context.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-tabs",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/tabs/tabs.tsx",
+          "type": "registry:component",
+          "target": "@components/still/tabs/tabs.tsx"
+        },
+        {
+          "path": "registry/components/tabs/tabs.module.css",
+          "type": "registry:component",
+          "target": "@components/still/tabs/tabs.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "navigation",
+          "layout"
+        ]
+      }
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "A multiline field for notes, descriptions, and longer text.",
+      "categories": [
+        "inputs"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/textarea/textarea.tsx",
+          "type": "registry:component",
+          "target": "@components/still/textarea/textarea.tsx"
+        },
+        {
+          "path": "registry/components/textarea/textarea.module.css",
+          "type": "registry:component",
+          "target": "@components/still/textarea/textarea.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "field",
+          "form"
+        ]
+      }
+    },
+    {
+      "name": "toast",
+      "type": "registry:ui",
+      "title": "Toast",
+      "description": "Brief confirmation for a completed background action.",
+      "categories": [
+        "feedback"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/toast/toast.tsx",
+          "type": "registry:component",
+          "target": "@components/still/toast/toast.tsx"
+        },
+        {
+          "path": "registry/components/toast/toast.module.css",
+          "type": "registry:component",
+          "target": "@components/still/toast/toast.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "status",
+          "message"
+        ]
+      }
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "Short supporting text for unfamiliar controls.",
+      "categories": [
+        "disclosure"
+      ],
+      "dependencies": [
+        "@radix-ui/react-tooltip",
+        "motion"
+      ],
+      "registryDependencies": [
+        "https://raw.githubusercontent.com/gyb-cpu/still-ui/main/public/r/still-motion-tokens.json"
+      ],
+      "files": [
+        {
+          "path": "registry/components/tooltip/tooltip.tsx",
+          "type": "registry:component",
+          "target": "@components/still/tooltip/tooltip.tsx"
+        },
+        {
+          "path": "registry/components/tooltip/tooltip.module.css",
+          "type": "registry:component",
+          "target": "@components/still/tooltip/tooltip.module.css"
+        }
+      ],
+      "meta": {
+        "tier": "free",
+        "kind": "component",
+        "tags": [
+          "hint",
+          "overlay"
+        ]
+      }
+    }
+  ]
+}
