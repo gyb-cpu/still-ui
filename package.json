@@ -2,7 +2,7 @@
   "name": "still-ui",
   "version": "0.1.0",
   "private": true,
-  "description": "Personal React component library with calm motion. Forked from Arc Library (MIT) and retuned to the still palette.",
+  "description": "Personal React component library with calm motion. Forked from Arc Library (MIT); full free set of 116 components and 22 blocks.",
   "license": "MIT",
   "author": "gyb-cpu",
   "homepage": "https://github.com/gyb-cpu/still-ui",

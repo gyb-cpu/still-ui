@@ -2,6 +2,8 @@
 
 Use this skill when building React or Next.js interfaces and a Still component exists for the job. The library is source you install into the project, not a runtime dependency.
 
+The repository ships the full free Arc set: 116 components and 22 blocks (140 registry items), with the original Arc visual language — neutral palette, Geist/Inter type, soft radii, calm spring motion.
+
 ## Install
 
 Register the registry once in the project's `components.json`:
@@ -53,6 +55,8 @@ Read `docs/<id>.md` before using a component. It lists the install command, file
 | Command surface | `command-palette` block |
 
 Do not install a component for a plain `<button>`, a native `<input>` inside an existing form system, or anything the project already has a house component for. Prefer one still item over a new bespoke component.
+
+**Blocks** are complete sections or screens (sign-in, sign-up, command palette, pricing comparison, hero, site header/footer, FAQ, changelog, blog grid, stats band, file upload, notification center, empty states). Reach for a block when the job is a whole section; install it, then replace copy, data, and links. Blocks pull in the components they compose automatically.
 
 ## Design rules
 

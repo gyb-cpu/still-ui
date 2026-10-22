@@ -2,7 +2,7 @@
 
 Personal React component library with calm motion. Source you own: CSS modules on semantic design tokens, [Motion](https://motion.dev) for animation, keyboard support, and a reduced-motion path in every item. Components are plain files installed into your project — there is no runtime package to keep in sync.
 
-Forked from [Arc Library](https://github.com/kuratlielia/arc-library) (MIT) and retuned to the **still palette**: cool neutrals, indigo accent, restrained motion. This repository keeps 31 components, one block, and the shared design/motion tokens.
+Forked from [Arc Library](https://github.com/kuratlielia/arc-library) (MIT) and keeps the original visual language of [uiarc.dev](https://uiarc.dev): neutral palette, Geist/Inter type, soft concentric radii, restrained spring motion. This repository holds the full free set: **116 components and 22 blocks**, plus the shared design and motion tokens.
 
 ![Still UI in light theme](assets/light.png)
 
@@ -20,11 +20,12 @@ Register the registry once in your `components.json`:
 }
 ```
 
-Install the tokens once per app, then any component:
+Install the tokens once per app, then any component or block:
 
 ```bash
 npx shadcn@latest add @still/still-foundation
 npx shadcn@latest add @still/button @still/input @still/dialog
+npx shadcn@latest add @still/command-palette   # a block
 ```
 
 Or install from a full URL without editing `components.json`:
@@ -40,8 +41,6 @@ Import the tokens at the root of your app:
 import "@/components/still/foundation.css";
 ```
 
-Files land in `components/still/<id>/…` (or `src/components/still/…` in a `src/` layout) and import each other with relative paths:
-
 ```tsx
 import { Button } from "@/components/still/button/button";
 
@@ -50,7 +49,30 @@ export function SaveBar() {
 }
 ```
 
-Requirements: React 19 + TypeScript, Next.js (App Router) or Vite, the `@/*` import alias, and `motion`. Some components also pull in `lucide-react` or a Radix primitive; the CLI installs whatever an item needs. No Tailwind required.
+Files land in `components/still/<id>/…` (or `src/components/still/…` in a `src/` layout) and import each other with relative paths. Local dependencies, such as the components inside a block, come along automatically.
+
+Requirements: React 19 + TypeScript, Next.js (App Router) or Vite, the `@/*` import alias, and `motion`. Some items also pull in `lucide-react` or a Radix primitive; the CLI installs whatever an item needs. No Tailwind required.
+
+## Type
+
+The tokens pair Geist for display text and Inter for body text, exactly like the upstream site. Load them once so the fonts resolve; otherwise the stack falls back to the system sans-serif.
+
+```tsx
+// app/layout.tsx — Next.js
+import { Geist, Inter } from "next/font/google";
+const geist = Geist({ subsets: ["latin"], variable: "--font-geist" });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" className={`${geist.variable} ${inter.variable}`}>
+      <body>{children}</body>
+    </html>
+  );
+}
+```
+
+In Vite or a plain React app, load the two families with `@font-face` or a `<link>` and set `--font-geist` / `--font-inter` on `:root`. For Chinese-first projects, append `"PingFang SC", "Microsoft YaHei"` to `--font-body` in `foundation.css`.
 
 ## Theme
 
@@ -58,25 +80,23 @@ Components read semantic tokens and never raw colors. Change the palette in `fou
 
 - **Dark mode:** set `data-theme="dark"` on `<html>`.
 - **Accent:** set `data-accent` on `<html>` to `neutral`, `violet`, `blue`, `green`, `amber`, `orange`, `coral`, or `rose`.
-- **Default identity:** cool neutral surfaces, indigo accent (`#4f46e5`), soft shadows, spring motion. Tune `--accent`, `--surface*`, `--border*`, `--radius-*`, `--font-body`, and `--shadow-*` in `registry/foundation.css`.
+- **Default identity:** neutral surfaces, ink primary actions, soft shadows, spring motion. Tune `--accent`, `--surface*`, `--border*`, `--radius-*`, `--font-body`, and `--shadow-*` in `registry/foundation.css`.
 - **Motion:** presets live in `registry/motion-tokens.ts`; every animation respects `prefers-reduced-motion`.
 
-## Components
+## Components and blocks
 
-31 components, grouped by job:
+116 components and 22 blocks, grouped as on the upstream site:
 
-| Group | Items |
-| --- | --- |
-| Foundation | `still-foundation` (tokens), `still-motion-tokens` |
-| Actions | button |
-| Forms | input, textarea, select, combobox, checkbox, switch, radio-group, slider, number-field, date-picker, calendar |
-| Overlays | dialog, drawer, popover, tooltip, dropdown-menu, context-menu |
-| Disclosure | tabs, accordion |
-| Feedback | toast, alert, progress, skeleton, stepper |
-| Data display | card, badge, avatar, sortable-data-table, pagination |
-| Blocks | command-palette |
+- **Actions:** buttons, gestures, menus, theme switches
+- **Inputs:** text fields, special inputs, selects, toggles, sliders, pickers, editors
+- **Disclosure:** navigation, expand, overlays
+- **Feedback:** messages, progress
+- **Data:** avatars, cards, charts, tables, activity, media
+- **Text:** text effects
+- **Special:** slot text
+- **Blocks:** app shell, auth, pricing, media, heroes, features, social proof, content, headers and footers
 
-Each item has a page under [`docs/`](./docs) with its install command, files, exports, and a usage snippet. `llms.txt` is the flat index for coding agents.
+Every item has a page under [`docs/`](./docs) with its install command, files, exports, and a usage snippet. `llms.txt` is the flat index for coding agents.
 
 ## For AI coding agents
 
@@ -92,8 +112,10 @@ registry/foundation.css        design tokens, light and dark themes
 registry/motion-tokens.ts      motion presets
 lib/motion-tokens.ts           motion presets, shared import path
 lib/still-provider.tsx         swap link/image elements (Next.js, router)
-registry/components/<id>/      components and the command-palette block
-registry.json                  registry index
+lib/media.ts                   sample media used by marketing blocks
+registry/components/<id>/      components
+registry/blocks/<id>/          marketing blocks
+registry.json                  registry index (140 items)
 public/r/<id>.json             prebuilt registry items consumed by the shadcn CLI
 docs/<id>.md                   generated per-item docs
 scripts/build-registry.mjs     regenerate public/r from source
@@ -108,11 +130,11 @@ npm run build          # rebuild public/r, docs/ and llms.txt
 npm run check          # typecheck + lint + registry consistency
 ```
 
-To add another item from upstream, copy its folder from `registry/components/`, add a matching entry to `registry.json` (files, dependencies, `registryDependencies`), run `npm run build`, then `npm run check`. Keep the upstream `uiarc.dev` preview link in the item meta as a reference.
+To add another item from upstream, copy its folder from `registry/components/` or `registry/blocks/`, add a matching entry to `registry.json` (files, dependencies, `registryDependencies`), run `npm run build`, then `npm run check`. See [UPSTREAM.md](./UPSTREAM.md) for the sync policy.
 
 ## Verification
 
-See [VERIFICATION.md](./VERIFICATION.md) for the checks run on 2026-10-22: `npm run check`, a full install simulation in a fresh Vite app, and a real `shadcn add` from the raw registry followed by typecheck and production build.
+See [VERIFICATION.md](./VERIFICATION.md) for the checks run on 2026-10-22: `npm run check`, a full install simulation, and a real `shadcn add` from the raw registry followed by typecheck and production build.
 
 ## License
 

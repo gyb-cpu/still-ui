@@ -2,7 +2,7 @@
 
 > Personal React components with calm motion, forked from Arc Library (MIT). Source you own: CSS modules on semantic design tokens, Motion for animation, keyboard support and a reduced-motion path in every item.
 
-There are 34 installable items. Install with the shadcn CLI from this repository's raw registry, or copy the files by hand. Components are React 19 + TypeScript, Next.js (App Router) or Vite, no Tailwind required.
+There are 140 installable items. Install with the shadcn CLI from this repository's raw registry, or copy the files by hand. Components are React 19 + TypeScript, Next.js (App Router) or Vite, no Tailwind required.
 
 ## Install
 
@@ -37,38 +37,144 @@ Import the tokens once at the app root: `import "@/components/still/foundation.c
 
 ## Components
 
-- [Accordion](https://github.com/gyb-cpu/still-ui/blob/main/docs/accordion.md): Progressively reveal supporting information in place.
-- [Alert](https://github.com/gyb-cpu/still-ui/blob/main/docs/alert.md): A persistent message that helps people recover or continue.
-- [Avatar](https://github.com/gyb-cpu/still-ui/blob/main/docs/avatar.md): A compact identity marker for people and accounts.
-- [Badge](https://github.com/gyb-cpu/still-ui/blob/main/docs/badge.md): A small label for status, category, or metadata.
 - [Button](https://github.com/gyb-cpu/still-ui/blob/main/docs/button.md): A clear, responsive action with quiet secondary states.
-- [Calendar](https://github.com/gyb-cpu/still-ui/blob/main/docs/calendar.md): Browse dates in a clear, compact month view.
-- [Card](https://github.com/gyb-cpu/still-ui/blob/main/docs/card.md): A contained group of related content and actions.
-- [Checkbox](https://github.com/gyb-cpu/still-ui/blob/main/docs/checkbox.md): A binary choice with a precise, legible state.
-- [Combobox](https://github.com/gyb-cpu/still-ui/blob/main/docs/combobox.md): Search and select from a list without leaving the field.
-- [Command palette](https://github.com/gyb-cpu/still-ui/blob/main/docs/command-palette.md): A complete keyboard driven action surface with search, grouped results, and shortcuts.
-- [Context menu](https://github.com/gyb-cpu/still-ui/blob/main/docs/context-menu.md): Secondary actions kept close to the selected object.
-- [Date picker](https://github.com/gyb-cpu/still-ui/blob/main/docs/date-picker.md): Choose a date without losing context.
-- [Dialog](https://github.com/gyb-cpu/still-ui/blob/main/docs/dialog.md): A focused surface for decisions that need attention.
-- [Drawer](https://github.com/gyb-cpu/still-ui/blob/main/docs/drawer.md): A temporary side surface for focused work.
+- [Action button](https://github.com/gyb-cpu/still-ui/blob/main/docs/action-button.md): A compact button for frequent toolbar actions.
+- [Split button](https://github.com/gyb-cpu/still-ui/blob/main/docs/split-button.md): A primary action with a menu of nearby alternatives.
+- [Button group](https://github.com/gyb-cpu/still-ui/blob/main/docs/button-group.md): Related actions joined into one surface with hairline dividers: a hover highlight glides between segments, the pressed one answers in place, and an attached menu can close the row.
+- [Floating button group](https://github.com/gyb-cpu/still-ui/blob/main/docs/floating-button-group.md): Separate soft buttons in a quiet tray, with one shared highlight that morphs from button to button as you move, and a pressed state that settles in place.
+- [Expanding button group](https://github.com/gyb-cpu/still-ui/blob/main/docs/expanding-button-group.md): Icon buttons in a compact group: the one you point at or focus grows to reveal its label while its neighbours slide aside, and an action confirms in place.
 - [Dropdown menu](https://github.com/gyb-cpu/still-ui/blob/main/docs/dropdown-menu.md): A focused list of actions anchored to a trigger.
-- [Empty state](https://github.com/gyb-cpu/still-ui/blob/main/docs/empty-state.md): A useful next step when there is nothing to show yet.
+- [Context menu](https://github.com/gyb-cpu/still-ui/blob/main/docs/context-menu.md): Secondary actions kept close to the selected object.
+- [Copy button](https://github.com/gyb-cpu/still-ui/blob/main/docs/copy-button.md): Copy a value with immediate confirmation.
+- [Drawer](https://github.com/gyb-cpu/still-ui/blob/main/docs/drawer.md): A temporary side surface for focused work.
+- [Theme switcher](https://github.com/gyb-cpu/still-ui/blob/main/docs/theme-switch.md): Four smooth ways to move between light and dark appearance.
+- [Eclipse](https://github.com/gyb-cpu/still-ui/blob/main/docs/theme-switch-eclipse.md): The next appearance crosses the page like an eclipse.
+- [Split](https://github.com/gyb-cpu/still-ui/blob/main/docs/theme-switch-split.md): The next appearance opens from a slim center seam.
+- [Rise](https://github.com/gyb-cpu/still-ui/blob/main/docs/theme-switch-rise.md): The next appearance rises into place.
+- [Avatar](https://github.com/gyb-cpu/still-ui/blob/main/docs/avatar.md): A compact identity marker for people and accounts.
+- [Avatar group](https://github.com/gyb-cpu/still-ui/blob/main/docs/avatar-group.md): Show a team or set of contributors in a small space.
 - [Input](https://github.com/gyb-cpu/still-ui/blob/main/docs/input.md): A single line field with clear labels and useful states.
-- [Number field](https://github.com/gyb-cpu/still-ui/blob/main/docs/number-field.md): Enter a bounded number with clear increment controls.
-- [Pagination](https://github.com/gyb-cpu/still-ui/blob/main/docs/pagination.md): Move through a long collection with clear bounds.
-- [Popover](https://github.com/gyb-cpu/still-ui/blob/main/docs/popover.md): A small anchored surface for contextual information.
-- [Progress](https://github.com/gyb-cpu/still-ui/blob/main/docs/progress.md): Show how much of a known task is complete.
-- [Radio group](https://github.com/gyb-cpu/still-ui/blob/main/docs/radio-group.md): Choose one option from a visible set.
-- [Select](https://github.com/gyb-cpu/still-ui/blob/main/docs/select.md): A compact choice field with a keyboard friendly menu.
-- [Skeleton](https://github.com/gyb-cpu/still-ui/blob/main/docs/skeleton.md): Reserve space while content is still loading.
-- [Slider](https://github.com/gyb-cpu/still-ui/blob/main/docs/slider.md): Pick a value or a range on a track that follows your finger.
-- [Sortable data table](https://github.com/gyb-cpu/still-ui/blob/main/docs/sortable-data-table.md): Compare structured records with sortable columns.
-- [Stepper](https://github.com/gyb-cpu/still-ui/blob/main/docs/stepper.md): Show where a person is in a multi-step flow and what is done.
-- [Switch](https://github.com/gyb-cpu/still-ui/blob/main/docs/switch.md): A tactile toggle for settings that take effect immediately.
-- [Tabs](https://github.com/gyb-cpu/still-ui/blob/main/docs/tabs.md): Switch between related content in the same context.
 - [Textarea](https://github.com/gyb-cpu/still-ui/blob/main/docs/textarea.md): A multiline field for notes, descriptions, and longer text.
-- [Toast](https://github.com/gyb-cpu/still-ui/blob/main/docs/toast.md): Brief confirmation for a completed background action.
+- [Select](https://github.com/gyb-cpu/still-ui/blob/main/docs/select.md): A compact choice field with a keyboard friendly menu.
+- [Combobox](https://github.com/gyb-cpu/still-ui/blob/main/docs/combobox.md): Search and select from a list without leaving the field.
+- [Checkbox](https://github.com/gyb-cpu/still-ui/blob/main/docs/checkbox.md): A binary choice with a precise, legible state.
+- [Switch](https://github.com/gyb-cpu/still-ui/blob/main/docs/switch.md): A tactile toggle for settings that take effect immediately.
+- [Multi-select](https://github.com/gyb-cpu/still-ui/blob/main/docs/multi-select.md): Select several values while keeping the field readable.
+- [Number field](https://github.com/gyb-cpu/still-ui/blob/main/docs/number-field.md): Enter a bounded number with clear increment controls.
+- [Password field](https://github.com/gyb-cpu/still-ui/blob/main/docs/password-field.md): Capture sensitive text with a visible reveal control.
+- [Search field](https://github.com/gyb-cpu/still-ui/blob/main/docs/search-field.md): A recognizable search entry point with clear affordances.
+- [Tag input](https://github.com/gyb-cpu/still-ui/blob/main/docs/tag-input.md): Turn short text values into removable tags.
+- [File dropzone](https://github.com/gyb-cpu/still-ui/blob/main/docs/file-dropzone.md): A generous target for dropping one or more files.
+- [Radio group](https://github.com/gyb-cpu/still-ui/blob/main/docs/radio-group.md): Choose one option from a visible set.
+- [Segmented control](https://github.com/gyb-cpu/still-ui/blob/main/docs/segmented-control.md): Switch between a small set of related views.
+- [Calendar](https://github.com/gyb-cpu/still-ui/blob/main/docs/calendar.md): Browse dates in a clear, compact month view.
+- [Date picker](https://github.com/gyb-cpu/still-ui/blob/main/docs/date-picker.md): Choose a date without losing context.
+- [Time picker](https://github.com/gyb-cpu/still-ui/blob/main/docs/time-picker.md): Choose a time with sensible keyboard behavior.
+- [Accordion](https://github.com/gyb-cpu/still-ui/blob/main/docs/accordion.md): Progressively reveal supporting information in place.
+- [Dialog](https://github.com/gyb-cpu/still-ui/blob/main/docs/dialog.md): A focused surface for decisions that need attention.
+- [Popover](https://github.com/gyb-cpu/still-ui/blob/main/docs/popover.md): A small anchored surface for contextual information.
 - [Tooltip](https://github.com/gyb-cpu/still-ui/blob/main/docs/tooltip.md): Short supporting text for unfamiliar controls.
+- [Tabs](https://github.com/gyb-cpu/still-ui/blob/main/docs/tabs.md): Switch between related content in the same context.
+- [Expandable card](https://github.com/gyb-cpu/still-ui/blob/main/docs/expandable-card.md): Give a dense card more room when requested.
+- [Breadcrumb](https://github.com/gyb-cpu/still-ui/blob/main/docs/breadcrumb.md): Show where a page sits in a hierarchy.
+- [Alert](https://github.com/gyb-cpu/still-ui/blob/main/docs/alert.md): A persistent message that helps people recover or continue.
+- [Toast](https://github.com/gyb-cpu/still-ui/blob/main/docs/toast.md): Brief confirmation for a completed background action.
+- [Rating](https://github.com/gyb-cpu/still-ui/blob/main/docs/rating.md): A simple, accessible way to capture a numeric opinion.
+- [Progress](https://github.com/gyb-cpu/still-ui/blob/main/docs/progress.md): Show how much of a known task is complete.
+- [Skeleton](https://github.com/gyb-cpu/still-ui/blob/main/docs/skeleton.md): Reserve space while content is still loading.
+- [Badge](https://github.com/gyb-cpu/still-ui/blob/main/docs/badge.md): A small label for status, category, or metadata.
+- [Card](https://github.com/gyb-cpu/still-ui/blob/main/docs/card.md): A contained group of related content and actions.
+- [Metric card](https://github.com/gyb-cpu/still-ui/blob/main/docs/metric-card.md): A compact summary for a number that needs context.
+- [Empty state](https://github.com/gyb-cpu/still-ui/blob/main/docs/empty-state.md): A useful next step when there is nothing to show yet.
+- [Tree view](https://github.com/gyb-cpu/still-ui/blob/main/docs/tree-view.md): Navigate nested folders and structured content.
+- [Pagination](https://github.com/gyb-cpu/still-ui/blob/main/docs/pagination.md): Move through a long collection with clear bounds.
+- [Filter toolbar](https://github.com/gyb-cpu/still-ui/blob/main/docs/filter-toolbar.md): Keep collection filters close and easy to reset.
+- [Sortable data table](https://github.com/gyb-cpu/still-ui/blob/main/docs/sortable-data-table.md): Compare structured records with sortable columns.
+- [Sparkline](https://github.com/gyb-cpu/still-ui/blob/main/docs/sparkline.md): Show a compact trend beside a value.
+- [Gauge](https://github.com/gyb-cpu/still-ui/blob/main/docs/gauge.md): Show a value against a known range.
+- [Animated counter](https://github.com/gyb-cpu/still-ui/blob/main/docs/animated-counter.md): Give changing totals a clear sense of movement.
+- [Code block](https://github.com/gyb-cpu/still-ui/blob/main/docs/code-block.md): Present code with legible hierarchy and copy access.
+- [Reorderable list](https://github.com/gyb-cpu/still-ui/blob/main/docs/reorderable-list.md): Organize items with direct drag and drop.
+- [Text reveal](https://github.com/gyb-cpu/still-ui/blob/main/docs/text-reveal.md): Reveal a short piece of content with restrained motion.
+- [In-view title](https://github.com/gyb-cpu/still-ui/blob/main/docs/in-view-title.md): Bring a section title in as it scrolls into view.
+- [Text morph](https://github.com/gyb-cpu/still-ui/blob/main/docs/text-morph.md): Morph a label into its next state, letter by letter.
+- [Text shimmer](https://github.com/gyb-cpu/still-ui/blob/main/docs/text-shimmer.md): Show ongoing work with a calm light across the words.
+- [Hold to confirm](https://github.com/gyb-cpu/still-ui/blob/main/docs/hold-to-confirm.md): Confirm a destructive action by holding, not tapping.
+- [Swipe actions](https://github.com/gyb-cpu/still-ui/blob/main/docs/swipe-actions.md): Reveal row actions with a swipe, or from the same actions in a menu.
+- [Reactions](https://github.com/gyb-cpu/still-ui/blob/main/docs/reactions.md): Acknowledge a post in one tap, with counts that roll.
+- [Slider](https://github.com/gyb-cpu/still-ui/blob/main/docs/slider.md): Pick a value or a range on a track that follows your finger.
+- [Elastic slider](https://github.com/gyb-cpu/still-ui/blob/main/docs/elastic-slider.md): A slider that stretches like rubber past its ends, with a swaying value tag and detents the thumb clicks into.
+- [Inline edit](https://github.com/gyb-cpu/still-ui/blob/main/docs/inline-edit.md): Rename in place: the text becomes a field without moving.
+- [Expanding search](https://github.com/gyb-cpu/still-ui/blob/main/docs/expanding-search.md): An icon that morphs into a search field with results beneath it.
+- [Chip group](https://github.com/gyb-cpu/still-ui/blob/main/docs/chip-group.md): Filter by a few facets with chips that morph as you pick them.
+- [Password strength](https://github.com/gyb-cpu/still-ui/blob/main/docs/password-strength.md): Show how strong a new password is while it is typed.
+- [Bottom sheet](https://github.com/gyb-cpu/still-ui/blob/main/docs/bottom-sheet.md): A sheet that rests at a peek or full height and follows your finger.
+- [Hover card](https://github.com/gyb-cpu/still-ui/blob/main/docs/hover-card.md): Preview a person or link on hover or focus without leaving the page.
+- [Resizable panels](https://github.com/gyb-cpu/still-ui/blob/main/docs/resizable-panels.md): Trade space between panes by dragging the divider between them.
+- [Toast stack](https://github.com/gyb-cpu/still-ui/blob/main/docs/toast-stack.md): Stack short results at the edge until you reach for them.
+- [Usage meter](https://github.com/gyb-cpu/still-ui/blob/main/docs/usage-meter.md): Show what fills an allowance and how close it is to the limit.
+- [Onboarding checklist](https://github.com/gyb-cpu/still-ui/blob/main/docs/onboarding-checklist.md): Guide a new workspace through setup, one step at a time.
+- [Image compare](https://github.com/gyb-cpu/still-ui/blob/main/docs/image-compare.md): Drag a divider across two images to see what changed.
+- [Carousel](https://github.com/gyb-cpu/still-ui/blob/main/docs/carousel.md): Browse a row of slides by dragging, flicking, or arrowing through them.
+- [Card stack](https://github.com/gyb-cpu/still-ui/blob/main/docs/card-stack.md): Review a deck one card at a time, with a throw and an undo.
+- [Bar chart](https://github.com/gyb-cpu/still-ui/blob/main/docs/bar-chart.md): Compare one measure across days and scrub any bar for its value.
+- [Activity heatmap](https://github.com/gyb-cpu/still-ui/blob/main/docs/activity-heatmap.md): See a year of activity at a glance, one square per day.
+- [Timeline](https://github.com/gyb-cpu/still-ui/blob/main/docs/timeline.md): Follow what happened, newest first, grouped by day.
+- [User menu](https://github.com/gyb-cpu/still-ui/blob/main/docs/user-menu.md): Your account, settings, theme, and sign out behind the avatar. Opens as a bottom sheet on phones.
+- [Stepper](https://github.com/gyb-cpu/still-ui/blob/main/docs/stepper.md): Show where a person is in a multi-step flow and what is done.
+- [Signature pad](https://github.com/gyb-cpu/still-ui/blob/main/docs/signature-pad.md): Smooth ink that thins with speed, with undo, replay, and PNG or SVG export.
+- [Icon morph](https://github.com/gyb-cpu/still-ui/blob/main/docs/icon-morph.md): Icons that morph between states: menu to close, play to pause, copy to check, and more.
+- [Date range picker](https://github.com/gyb-cpu/still-ui/blob/main/docs/date-range-picker.md): A range picker that grows from its trigger into two months with presets and a stretching range highlight.
+- [Color picker](https://github.com/gyb-cpu/still-ui/blob/main/docs/color-picker.md): A swatch that grows into a picker with format morphing, eyedropper, saved swatches, and contrast readout.
+- [Morph select](https://github.com/gyb-cpu/still-ui/blob/main/docs/morph-select.md): A select whose trigger grows into the list, with a gliding highlight and type-ahead.
+- [Line chart](https://github.com/gyb-cpu/still-ui/blob/main/docs/line-chart.md): A multi-series line chart with a gliding crosshair, legend toggles, and paths that morph between ranges.
+- [Donut chart](https://github.com/gyb-cpu/still-ui/blob/main/docs/donut-chart.md): A donut whose arcs morph between datasets, with the active value rolling into the center.
+- [Streamgraph](https://github.com/gyb-cpu/still-ui/blob/main/docs/streamgraph.md): Layered streams on a wiggle baseline that morph between ranges, with a layer you can isolate and read week by week.
+- [Brush chart](https://github.com/gyb-cpu/still-ui/blob/main/docs/brush-chart.md): A dense time series with an overview strip: drag a window to zoom, resize it by its handles, and read events in place.
+- [Ridgeline](https://github.com/gyb-cpu/still-ui/blob/main/docs/ridgeline.md): Overlapping distributions, one ridge per group: hover to lift a ridge and read its quartiles, switch datasets and every curve morphs.
+- [Treemap](https://github.com/gyb-cpu/still-ui/blob/main/docs/treemap.md): A squarified treemap: click to drill and the tiles grow to fill the view, with a breadcrumb back and metrics that morph every tile.
+- [Waffle chart](https://github.com/gyb-cpu/still-ui/blob/main/docs/waffle-chart.md): A ten by ten unit chart where every cell is one percent, and cells fly to their new group when the data changes.
+- [Slope chart](https://github.com/gyb-cpu/still-ui/blob/main/docs/slope-chart.md): Before and after on two axes: lines draw in, rank moves sit beside each value, and switching datasets slides every line to its new slope.
+- [Countdown](https://github.com/gyb-cpu/still-ui/blob/main/docs/countdown.md): A launch countdown with rolling digits that morphs into a live state at zero.
+- [Cookie consent](https://github.com/gyb-cpu/still-ui/blob/main/docs/cookie-consent.md): A consent bar that morphs into preferences and folds into a reopen button.
+- [Announcement bar](https://github.com/gyb-cpu/still-ui/blob/main/docs/announcement-bar.md): A top banner that rotates messages, counts down, and collapses smoothly when dismissed.
+- [JSON viewer](https://github.com/gyb-cpu/still-ui/blob/main/docs/json-viewer.md): A collapsible JSON tree with search, paging for long arrays, and copy value or path.
+- [Scrub input](https://github.com/gyb-cpu/still-ui/blob/main/docs/scrub-input.md): A Figma-style number field: drag the label to scrub, or type values, units, and arithmetic.
+- [Phone input](https://github.com/gyb-cpu/still-ui/blob/main/docs/phone-input.md): A phone field with a country picker, formatting as you type, and E.164 output.
+- [Money input](https://github.com/gyb-cpu/still-ui/blob/main/docs/money-input.md): A currency field with live grouping, stable width, rolling digits, and minor-unit output.
+- [Shortcut recorder](https://github.com/gyb-cpu/still-ui/blob/main/docs/shortcut-recorder.md): Record key combinations into key caps, with conflict warnings, Kbd, and a searchable cheatsheet.
+- [Confirm morph](https://github.com/gyb-cpu/still-ui/blob/main/docs/confirm-morph.md): A destructive button that morphs into an inline confirmation, a spinner, and a result with undo.
+- [Mention input](https://github.com/gyb-cpu/still-ui/blob/main/docs/mention-input.md): A textarea with @people and #channel mentions that act as single tokens, with suggestions at the caret.
+- [Chat thread](https://github.com/gyb-cpu/still-ui/blob/main/docs/chat-thread.md): A chat thread with grouped messages, reactions, read receipts, typing, and a composer with attachments.
+- [Rich text editor](https://github.com/gyb-cpu/still-ui/blob/main/docs/rich-text-editor.md): A lightweight editor with markdown shortcuts, a floating toolbar, a slash menu, and HTML and markdown output.
+- [Billing toggle](https://github.com/gyb-cpu/still-ui/blob/main/docs/billing-toggle.md): A monthly and yearly switch with a savings badge and prices that roll to the new amount.
+- [Scroll area](https://github.com/gyb-cpu/still-ui/blob/main/docs/scroll-area.md): A native scroll container with thin overlay scrollbars and edge fades that appear only when content overflows.
+- [Radio cards](https://github.com/gyb-cpu/still-ui/blob/main/docs/radio-cards.md): Selectable option cards with a sliding selection ring, price and description slots, and radio keyboard behavior.
+- [Comment thread](https://github.com/gyb-cpu/still-ui/blob/main/docs/comment-thread.md): Threaded comments with replies, reactions, mentions, inline edit, and resolve.
+- [Slot text](https://github.com/gyb-cpu/still-ui/blob/main/docs/slot-text.md): Text and numbers that spin into their new value on staggered slot machine reels.
+- [Expandable text](https://github.com/gyb-cpu/still-ui/blob/main/docs/expandable-text.md): Long text clamped to a few lines with a soft fade that glides open with Read more and closes with Show less, shown only when the text overflows.
+- [Sign up form](https://github.com/gyb-cpu/still-ui/blob/main/docs/signup-form.md): An account creation flow with field validation, password strength, and a clear completion state.
+- [Logo marquee](https://github.com/gyb-cpu/still-ui/blob/main/docs/logo-marquee.md): A quiet, continuously moving row of brand marks with a pause control.
+- [Plan comparison](https://github.com/gyb-cpu/still-ui/blob/main/docs/plan-comparison.md): Compare meaningful differences between plans and billing periods.
+- [Command palette](https://github.com/gyb-cpu/still-ui/blob/main/docs/command-palette.md): A complete keyboard driven action surface with search, grouped results, and shortcuts.
+- [Notification center](https://github.com/gyb-cpu/still-ui/blob/main/docs/notification-center.md): A home for updates with read state, grouped information, and animated disclosure.
+- [File upload](https://github.com/gyb-cpu/still-ui/blob/main/docs/file-upload.md): A complete file selection flow with constraints, progress, and error feedback.
+- [OTP input](https://github.com/gyb-cpu/still-ui/blob/main/docs/otp-input.md): A six digit verification flow with paste support and keyboard navigation.
+- [Changelog feed](https://github.com/gyb-cpu/still-ui/blob/main/docs/changelog-feed.md): Release notes you can filter, open in place, and scroll through month by month.
+- [Sign in](https://github.com/gyb-cpu/still-ui/blob/main/docs/sign-in.md): A sign in card that morphs from email to a six digit code to your account.
+- [Page header](https://github.com/gyb-cpu/still-ui/blob/main/docs/page-header.md): A project page header that folds into a compact bar as you scroll, with tabs whose counts roll.
+- [Empty states](https://github.com/gyb-cpu/still-ui/blob/main/docs/empty-states.md): Four empty states in one illustration whose shapes morph between scenes as you switch tabs.
+- [Centered login](https://github.com/gyb-cpu/still-ui/blob/main/docs/login-centered.md): A passkey-first login card on a quiet ring backdrop that morphs through email and code.
+- [Site header](https://github.com/gyb-cpu/still-ui/blob/main/docs/site-header.md): A sticky website header that turns solid on scroll, with a gliding active link, mega menu panels, and a mobile sheet.
+- [Site footer](https://github.com/gyb-cpu/still-ui/blob/main/docs/site-footer.md): A website footer with link columns and newsletter, a minimal layout, and a large fading Arc mark.
+- [Hero section](https://github.com/gyb-cpu/still-ui/blob/main/docs/hero-section.md): Three full screen SaaS heroes: a live dashboard rising from the bottom edge over a drifting mesh, a workflow graph that routes sample events node by node, and editorial type over a mesh gradient.
+- [FAQ section](https://github.com/gyb-cpu/still-ui/blob/main/docs/faq-section.md): FAQs as an accordion, a topic rail, or a searchable list that highlights matches.
+- [Contact section](https://github.com/gyb-cpu/still-ui/blob/main/docs/contact-section.md): A validated contact form that morphs into a confirmation, support channels, and office cards with local times.
+- [Blog grid](https://github.com/gyb-cpu/still-ui/blob/main/docs/blog-grid.md): A blog index with a featured post, category filter, post cards, pagination and an in-place reader.
+- [Comparison table](https://github.com/gyb-cpu/still-ui/blob/main/docs/comparison-table.md): An us versus them table with a sticky header, a highlighted column, and a stacked phone view.
+- [Stats band](https://github.com/gyb-cpu/still-ui/blob/main/docs/stats-band.md): Headline numbers that count up in view, each with a tiny visual that proves it and a context line on hover, plain or in a hairline grid.
+- [CTA section](https://github.com/gyb-cpu/still-ui/blob/main/docs/cta-section.md): A call to action as a centered closing section, a split beside a setup card that completes itself, or a dismissible banner.
+- [Newsletter signup](https://github.com/gyb-cpu/still-ui/blob/main/docs/newsletter-signup.md): An email signup framed by a stack of past issues; subscribing drops the next issue, addressed to you, onto the front.
 
 ## Docs
 
