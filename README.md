@@ -74,6 +74,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
 In Vite or a plain React app, load the two families with `@font-face` or a `<link>` and set `--font-geist` / `--font-inter` on `:root`. For Chinese-first projects, append `"PingFang SC", "Microsoft YaHei"` to `--font-body` in `foundation.css`.
 
+## Versioning
+
+`main` tracks the latest source. Stable snapshots are tagged; pin the registry to a tag so installs stay reproducible:
+
+```json
+{
+  "registries": {
+    "@still": "https://raw.githubusercontent.com/gyb-cpu/still-ui/v0.1.0/public/r/{name}.json"
+  }
+}
+```
+
+`v0.1.0` is the initial full-set release (116 components + 22 blocks, original Arc visual language, Still brand copy). To upgrade, change the tag, re-run `npx shadcn@latest add … --overwrite`, then review the diff. Tags follow semantic versioning; `main` may move ahead between releases.
+
 ## Theme
 
 Components read semantic tokens and never raw colors. Change the palette in `foundation.css` once and every component follows, in both themes.
