@@ -166,7 +166,7 @@ Import the tokens once at the app root: `import "@/components/still/foundation.c
 - [Empty states](https://github.com/gyb-cpu/still-ui/blob/main/docs/empty-states.md): Four empty states in one illustration whose shapes morph between scenes as you switch tabs.
 - [Centered login](https://github.com/gyb-cpu/still-ui/blob/main/docs/login-centered.md): A passkey-first login card on a quiet ring backdrop that morphs through email and code.
 - [Site header](https://github.com/gyb-cpu/still-ui/blob/main/docs/site-header.md): A sticky website header that turns solid on scroll, with a gliding active link, mega menu panels, and a mobile sheet.
-- [Site footer](https://github.com/gyb-cpu/still-ui/blob/main/docs/site-footer.md): A website footer with link columns and newsletter, a minimal layout, and a large fading Arc mark.
+- [Site footer](https://github.com/gyb-cpu/still-ui/blob/main/docs/site-footer.md): A website footer with link columns and newsletter, a minimal layout, and a large fading Still mark.
 - [Hero section](https://github.com/gyb-cpu/still-ui/blob/main/docs/hero-section.md): Three full screen SaaS heroes: a live dashboard rising from the bottom edge over a drifting mesh, a workflow graph that routes sample events node by node, and editorial type over a mesh gradient.
 - [FAQ section](https://github.com/gyb-cpu/still-ui/blob/main/docs/faq-section.md): FAQs as an accordion, a topic rail, or a searchable list that highlights matches.
 - [Contact section](https://github.com/gyb-cpu/still-ui/blob/main/docs/contact-section.md): A validated contact form that morphs into a confirmation, support channels, and office cards with local times.

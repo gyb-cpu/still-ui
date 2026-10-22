@@ -204,7 +204,7 @@ export function SignupForm({ onSubmit, serverError, onProvider }: SignupFormProp
   const firstName = name.trim().split(/\s+/)[0] || "there";
 
   return (
-    <section className={styles.block} aria-label="Create an Arc account">
+    <section className={styles.block} aria-label="Create a Still account">
       <motion.div className={styles.viewport} style={{ height }}>
         <div ref={track} className={styles.track}>
           <AnimatePresence mode="popLayout" initial={false} custom={custom}>

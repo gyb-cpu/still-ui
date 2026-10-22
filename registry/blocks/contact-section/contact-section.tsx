@@ -292,7 +292,7 @@ export const contactExampleChannels: ContactChannel[] = [
     value: "community", label: "Ask the community", meta: "4,200 members", icon: <Users {...ICON} />,
     detail: <>
       <h3>Ask the community</h3>
-      <p>Designers and engineers who ship with Arc answer questions about components, theming, and motion, usually within the hour.</p>
+      <p>Designers and engineers who ship with Still answer questions about components, theming, and motion, usually within the hour.</p>
       <ConfirmAction idle="Open the forum" done="Forum opened" note="The forum opens in a new tab on the live site." />
     </>,
   },

@@ -56,7 +56,7 @@ Read `docs/<id>.md` before using a component. It lists the install command, file
 
 Do not install a component for a plain `<button>`, a native `<input>` inside an existing form system, or anything the project already has a house component for. Prefer one still item over a new bespoke component.
 
-**Blocks** are complete sections or screens (sign-in, sign-up, command palette, pricing comparison, hero, site header/footer, FAQ, changelog, blog grid, stats band, file upload, notification center, empty states). Reach for a block when the job is a whole section; install it, then replace copy, data, and links. Blocks ship upstream demo copy — including the "Arc" brand name, sample emails, and remote sample images — so replace those before shipping. Blocks pull in the components they compose automatically.
+**Blocks** are complete sections or screens (sign-in, sign-up, command palette, pricing comparison, hero, site header/footer, FAQ, changelog, blog grid, stats band, file upload, notification center, empty states). Reach for a block when the job is a whole section; install it, then replace copy, data, and links. Blocks ship demo copy — sample emails, links, and remote sample images — so replace those before shipping; brand copy already says Still. Blocks pull in the components they compose automatically.
 
 ## Design rules
 

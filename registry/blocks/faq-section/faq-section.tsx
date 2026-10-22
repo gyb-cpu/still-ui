@@ -52,13 +52,13 @@ const standard = [...motionTokens.ease.standard] as Bezier;
 const { duration } = motionTokens;
 
 export const faqExampleItems: FaqItem[] = [
-  { question: "What is Arc?", answer: "Arc is a library of React components and blocks built on Motion and Radix. You copy the source into your project, so every line is yours to change.", category: "General" },
+  { question: "What is Still?", answer: "Still is a library of React components and blocks built on Motion and Radix. You copy the source into your project, so every line is yours to change.", category: "General" },
   { question: "Does it work with my design system?", answer: "Yes. Components read semantic tokens such as surface, border, and accent, so mapping them to your palette takes one stylesheet.", category: "General" },
   { question: "Is reduced motion supported?", answer: "Every animation has a reduced motion branch. It keeps the final state, focus, and feedback while removing travel and looping.", category: "General" },
-  { question: "Which frameworks are supported?", answer: "Arc targets React 19 and Next.js 16. The components are client components and also run in Vite and React Router apps.", category: "Technical" },
+  { question: "Which frameworks are supported?", answer: "Still targets React 19 and Next.js 16. The components are client components and also run in Vite and React Router apps.", category: "Technical" },
   { question: "How do I install a component?", answer: "Run the shadcn CLI with the component name, or copy the files by hand. Each page lists the packages it needs.", category: "Technical" },
   { question: "How do updates work?", answer: "New components and fixes ship in small releases. Run the CLI again to pull the latest version of anything you installed.", category: "Technical" },
-  { question: "Can I use Arc in client projects?", answer: "Yes. Free components are MIT licensed, and a Pro license covers commercial work for you or your team.", category: "Licensing" },
+  { question: "Can I use Still in client projects?", answer: "Yes. Components are MIT licensed, so you can use them in commercial work.", category: "Licensing" },
   { question: "What happens when my plan ends?", answer: "You keep every component you installed. Renewing only matters for new releases and updates.", category: "Licensing" },
 ];
 

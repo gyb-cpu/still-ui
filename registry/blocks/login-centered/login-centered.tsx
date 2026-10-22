@@ -365,7 +365,7 @@ export function LoginCentered({ demoCode = "482913", fullScreen = false, demoEma
       </motion.div>
 
       <header className={styles.bar}>
-        <span className={styles.mark}><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 15a7 7 0 0 1 14 0" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /><circle cx="10" cy="15" r="1.75" fill="currentColor" /></svg>Arc</span>
+        <span className={styles.mark}><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3 15a7 7 0 0 1 14 0" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /><circle cx="10" cy="15" r="1.75" fill="currentColor" /></svg>Still</span>
         <p className={styles.switch}>
           <span className={styles.switchPrompt}>{(["sign-in", "sign-up"] as const).map(option => <motion.span key={option} aria-hidden={option !== mode || undefined} initial={false} animate={labelState(option === mode, reduce)} transition={labelTransition(reduce)}>{option === "sign-up" ? "Have an account?" : "No account?"}</motion.span>)}</span>
           <button type="button" className={styles.switchButton} aria-label={signingUp ? "Sign in" : "Sign up"} onClick={switchMode}>{(["sign-in", "sign-up"] as const).map(option => <motion.span key={option} aria-hidden="true" initial={false} animate={labelState(option === mode, reduce)} transition={labelTransition(reduce)}>{option === "sign-up" ? "Sign in" : "Sign up"}</motion.span>)}</button>
@@ -378,7 +378,7 @@ export function LoginCentered({ demoCode = "482913", fullScreen = false, demoEma
             <div ref={track} className={styles.track}>
               <AnimatePresence mode="popLayout" initial={false} custom={custom}>
                 {step === "passkey" && <motion.div key="passkey" className={styles.step} custom={custom} variants={stepMotion} initial="enter" animate="center" exit="exit">
-                  <div className={styles.heading}><h2>Sign in to Arc</h2><p>Use the passkey saved on this device. No password needed.</p></div>
+                  <div className={styles.heading}><h2>Sign in to Still</h2><p>Use the passkey saved on this device. No password needed.</p></div>
                   <div className={styles.actions}>
                     <Button ref={passkeyRef} type="button" className={styles.wide} aria-busy={passkey === "waiting" || undefined} aria-disabled={passkey !== "idle" || !!busy || undefined} onClick={startPasskey}>{passkeyLabel}</Button>
                     <Button type="button" variant="secondary" className={styles.wide} aria-disabled={passkey === "verified" || !!busy || undefined} onClick={passkey === "waiting" ? cancelPasskey : switchToEmail}>{passkey === "waiting" ? "Cancel" : <><Mail size={16} strokeWidth={1.75} aria-hidden="true" />Use email instead</>}</Button>
@@ -416,7 +416,7 @@ export function LoginCentered({ demoCode = "482913", fullScreen = false, demoEma
                     <g transform="rotate(-90 24 24)"><motion.circle cx="24" cy="24" r="22.25" fill="none" stroke="currentColor" strokeWidth="1.5" initial={reduce ? false : { pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }} transition={{ pathLength: { duration: motionTokens.duration.considered, ease: [...motionTokens.ease.inOut], delay: .16 }, opacity: { duration: motionTokens.duration.instant, delay: .16 } }} /></g>
                     <motion.path d="M15.5 24.5l5.5 5.5 11.5-12" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" initial={reduce ? false : { pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 1 }} transition={{ pathLength: { duration: motionTokens.duration.standard + .08, ease: [...motionTokens.ease.enter], delay: .52 }, opacity: { duration: motionTokens.duration.instant, delay: .52 } }} />
                   </svg>
-                  <div className={styles.heading}><h2 ref={doneRef} tabIndex={-1}>{signingUp ? "Welcome to Arc" : "Welcome back"}</h2><p>{signingUp ? "Your account is ready. " : "You are signed in as "}<span className={styles.address}>{account}</span>{signingUp ? "" : "."}</p></div>
+                  <div className={styles.heading}><h2 ref={doneRef} tabIndex={-1}>{signingUp ? "Welcome to Still" : "Welcome back"}</h2><p>{signingUp ? "Your account is ready. " : "You are signed in as "}<span className={styles.address}>{account}</span>{signingUp ? "" : "."}</p></div>
                   <dl className={styles.details}>
                     <div><dt>Method</dt><dd>{method}</dd></div>
                     <div><dt>This device</dt><dd>Remembered for 30 days</dd></div>

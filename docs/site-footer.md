@@ -1,6 +1,6 @@
 # Site footer
 
-A website footer with link columns and newsletter, a minimal layout, and a large fading Arc mark.
+A website footer with link columns and newsletter, a minimal layout, and a large fading Still mark.
 
 **Type:** block  
 **Id:** `site-footer`

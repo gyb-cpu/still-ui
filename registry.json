@@ -6,8 +6,8 @@
     {
       "name": "still-foundation",
       "type": "registry:item",
-      "title": "Arc foundation",
-      "description": "Arc design tokens (color, surface, radius, shadow, accent, focus, light and dark themes), plus the shared motion presets. Install once per app.",
+      "title": "Still foundation",
+      "description": "Still design tokens (color, surface, radius, shadow, accent, focus, light and dark themes), plus the shared motion presets. Install once per app.",
       "categories": [
         "foundation"
       ],
@@ -26,8 +26,8 @@
     {
       "name": "still-motion-tokens",
       "type": "registry:item",
-      "title": "Arc motion tokens",
-      "description": "The shared motion presets (durations, easings, springs, staggers) Arc components import. Installed automatically with any item that uses them.",
+      "title": "Still motion tokens",
+      "description": "The shared motion presets (durations, easings, springs, staggers) Still components import. Installed automatically with any item that uses them.",
       "categories": [
         "foundation"
       ],
@@ -5145,7 +5145,7 @@
       "name": "site-footer",
       "type": "registry:block",
       "title": "Site footer",
-      "description": "A website footer with link columns and newsletter, a minimal layout, and a large fading Arc mark.",
+      "description": "A website footer with link columns and newsletter, a minimal layout, and a large fading Still mark.",
       "categories": [
         "blocks"
       ],

@@ -187,14 +187,14 @@ function Destination({ link, onChoose, children, ...rest }: DestinationProps) {
  */
 export const SiteHeader = forwardRef<HTMLElement, SiteHeaderProps>(function SiteHeader({
   variant = "mega",
-  brand = { name: "Arc" },
+  brand = { name: "Still" },
   items = siteHeaderExampleItems,
   current: currentProp,
   defaultCurrent,
   onCurrentChange,
   onNavigate,
   secondaryAction = { label: "Sign in" },
-  primaryAction = { label: "Get Arc" },
+  primaryAction = { label: "Get Still" },
   sticky = true,
   scrollContainer,
   scrollThreshold = 8,
@@ -530,11 +530,11 @@ export function SiteHeaderBlock({ variant: initial = "mega" }: { variant?: SiteH
         onNavigate={destination => setLast(destination.label)}
         scrollContainer={scrollRef}
         secondaryAction={{ label: "Sign in", onClick: () => setLast("Sign in") }}
-        primaryAction={{ label: "Get Arc", onClick: () => setLast("Get Arc") }}
+        primaryAction={{ label: "Get Still", onClick: () => setLast("Get Still") }}
       />
       <div className={styles.page}>
         <div className={styles.pageHero}>
-          <h2>{pageLabels[current] ?? "Arc"}</h2>
+          <h2>{pageLabels[current] ?? "Still"}</h2>
           <p className={styles.srOnly} aria-live="polite">{last ? `Opened ${last}` : ""}</p>
         </div>
         <div className={styles.pageRows} aria-hidden="true">

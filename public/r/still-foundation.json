@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "still-foundation",
   "type": "registry:item",
-  "title": "Arc foundation",
-  "description": "Arc design tokens (color, surface, radius, shadow, accent, focus, light and dark themes), plus the shared motion presets. Install once per app.",
+  "title": "Still foundation",
+  "description": "Still design tokens (color, surface, radius, shadow, accent, focus, light and dark themes), plus the shared motion presets. Install once per app.",
   "categories": [
     "foundation"
   ],

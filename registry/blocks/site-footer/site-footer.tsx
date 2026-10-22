@@ -152,7 +152,7 @@ function Newsletter({ title, description, placeholder = "you@example.com", onSub
  */
 export const SiteFooter = forwardRef<HTMLElement, SiteFooterProps>(function SiteFooter({
   variant = "columns",
-  brand = { name: "Arc" },
+  brand = { name: "Still" },
   tagline = "Interface components that move with intent.",
   columns = siteFooterExampleColumns,
   links,

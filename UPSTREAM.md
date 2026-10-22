@@ -3,7 +3,7 @@
 This repository is a fork of [Arc Library](https://github.com/kuratlielia/arc-library) (MIT). It keeps the full free, open part of that library.
 
 - **Pinned upstream:** commit `d2db2a9` (2026-10-21), the clone used to seed this repository.
-- **What changed here:** install folder `arc/` → `still/`, registry namespace `@still`, provider renamed to `StillProvider`, item names `arc-foundation` / `arc-motion-tokens` → `still-foundation` / `still-motion-tokens`, `public/r` and `docs/` generated locally, and CI added. The visual language, component source, tokens, and motion presets are upstream's.
+- **What changed here:** install folder `arc/` → `still/`, registry namespace `@still`, provider renamed to `StillProvider`, item names `arc-foundation` / `arc-motion-tokens` → `still-foundation` / `still-motion-tokens`, user-facing copy rebranded from "Arc" to "Still" in the blocks and registry descriptions, `public/r` and `docs/` generated locally, and CI added. The visual language, component source, tokens, and motion presets are upstream's. Code identifiers, CSS token names (`--arc-gradient-*`), storage keys, and comments were left unchanged.
 - **Scope:** the full free set — 116 components + 22 blocks, 140 registry items. Four block items live under `registry/components/` (`command-palette`, `notification-center`, `otp-input`, `file-upload`) because the registry item type is the source of truth for classification.
 - **What was not copied:** Arc Pro (66 components + 87 blocks) is commercial and is not in the upstream public repository. Do not add it here.
 - **License:** the upstream MIT notice is retained in `LICENSE`; modifications are licensed MIT too.

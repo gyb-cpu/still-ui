@@ -133,7 +133,7 @@ Generated from `registry.json`: 138 components and blocks plus the foundation an
 | [Empty states](./empty-states.md) | block | Four empty states in one illustration whose shapes morph between scenes as you switch tabs. |
 | [Centered login](./login-centered.md) | block | A passkey-first login card on a quiet ring backdrop that morphs through email and code. |
 | [Site header](./site-header.md) | block | A sticky website header that turns solid on scroll, with a gliding active link, mega menu panels, and a mobile sheet. |
-| [Site footer](./site-footer.md) | block | A website footer with link columns and newsletter, a minimal layout, and a large fading Arc mark. |
+| [Site footer](./site-footer.md) | block | A website footer with link columns and newsletter, a minimal layout, and a large fading Still mark. |
 | [Hero section](./hero-section.md) | block | Three full screen SaaS heroes: a live dashboard rising from the bottom edge over a drifting mesh, a workflow graph that routes sample events node by node, and editorial type over a mesh gradient. |
 | [FAQ section](./faq-section.md) | block | FAQs as an accordion, a topic rail, or a searchable list that highlights matches. |
 | [Contact section](./contact-section.md) | block | A validated contact form that morphs into a confirmation, support channels, and office cards with local times. |

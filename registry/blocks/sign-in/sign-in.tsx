@@ -59,7 +59,7 @@ function accountFor(value: string): SignInAccount {
   const parts = email.split("@")[0]!.split(/[._+-]+/).filter(Boolean);
   const known = people.find(person => person.name.toLowerCase().split(" ")[0] === parts[0]);
   if (known) return { ...known, email };
-  return { name: parts.slice(0, 2).map(part => part[0]!.toUpperCase() + part.slice(1)).join(" ") || "Arc member", email };
+  return { name: parts.slice(0, 2).map(part => part[0]!.toUpperCase() + part.slice(1)).join(" ") || "Still member", email };
 }
 
 const stepMotion: Variants = {
@@ -262,7 +262,7 @@ export function SignIn({ demoCode = "123456", onSignIn }: SignInProps) {
           <div ref={track} className={styles.track}>
             <AnimatePresence mode="popLayout" initial={false} custom={custom}>
               {step === "email" && <motion.div key="email" className={styles.step} custom={custom} variants={stepMotion} initial="enter" animate="center" exit="exit">
-                <div className={styles.heading}><h2>Sign in to Arc</h2><p>Enter your email and we will send you a 6 digit code.</p></div>
+                <div className={styles.heading}><h2>Sign in to Still</h2><p>Enter your email and we will send you a 6 digit code.</p></div>
                 <form className={styles.form} onSubmit={submitEmail} noValidate>
                   <div className={styles.fieldGroup}>
                     <Input ref={emailRef} label="Email" type="email" inputMode="email" autoComplete="email" autoCapitalize="none" spellCheck={false} placeholder="name@example.com" value={email} readOnly={busy === "email"} error={emailError} onChange={event => setEmail(event.target.value)} onBlur={() => { if (email.trim()) setTouched(true); }} />
