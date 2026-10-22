@@ -4,6 +4,10 @@ Personal React component library with calm motion. Source you own: CSS modules o
 
 Forked from [Arc Library](https://github.com/kuratlielia/arc-library) (MIT) and retuned to the **still palette**: cool neutrals, indigo accent, restrained motion. This repository keeps 31 components, one block, and the shared design/motion tokens.
 
+![Still UI in light theme](assets/light.png)
+
+![Still UI in dark theme](assets/dark.png)
+
 ## Install
 
 Register the registry once in your `components.json`:
@@ -105,6 +109,10 @@ npm run check          # typecheck + lint + registry consistency
 ```
 
 To add another item from upstream, copy its folder from `registry/components/`, add a matching entry to `registry.json` (files, dependencies, `registryDependencies`), run `npm run build`, then `npm run check`. Keep the upstream `uiarc.dev` preview link in the item meta as a reference.
+
+## Verification
+
+See [VERIFICATION.md](./VERIFICATION.md) for the checks run on 2026-10-22: `npm run check`, a full install simulation in a fresh Vite app, and a real `shadcn add` from the raw registry followed by typecheck and production build.
 
 ## License
 
