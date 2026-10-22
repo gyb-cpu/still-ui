@@ -1,5 +1,7 @@
 # Still UI
 
+[English](./README.md) | [简体中文](./README.zh-CN.md)
+
 Personal React component library with calm motion. Source you own: CSS modules on semantic design tokens, [Motion](https://motion.dev) for animation, keyboard support, and a reduced-motion path in every item. Components are plain files installed into your project — there is no runtime package to keep in sync.
 
 Forked from [Arc Library](https://github.com/kuratlielia/arc-library) (MIT) and keeps the original visual language of [uiarc.dev](https://uiarc.dev): neutral palette, Geist/Inter type, soft concentric radii, restrained spring motion. This repository holds the full free set: **116 components and 22 blocks**, plus the shared design and motion tokens.
